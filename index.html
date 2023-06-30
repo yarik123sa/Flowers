@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «lowerFlower»</title>
+</head>
+
+<body>
+
+	<div class="rootpage">
+		<h1>Верстка «lowerFlower»</h1>
+		<h2>Готові сторінки:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">Головна</a></li>
+			<li><a target="_blank" href="catalog.html">Каталог</a></li>
+			<li><a target="_blank" href="card.html">Картка товару</a></li>
+			<li><a target="_blank" href="shipping.html">Доставка і оплата</a></li>
+			<li><a target="_blank" href="about.html">Про нас</a></li>
+			<li><a target="_blank" href="contacts.html">Контакти</a></li>
+			<li class="uppercase"><a target="_blank" href="faq.html">faq</a></li>
+		</ol>
+		<div class="rootpage__decors">
+			<div class="rootpage__decor rootpage__decor_1"><picture><source srcset="img/shipping/decor/01.webp" type="image/webp"><img src="img/shipping/decor/01.png" alt="Decor"></picture></div>
+			<div class="rootpage__decor rootpage__decor_2"><picture><source srcset="img/catalog/decors/01.webp" type="image/webp"><img src="img/catalog/decors/01.png" alt="Decor"></picture></div>
+			<div class="rootpage__decor rootpage__decor_3"></div>
+			<div class="rootpage__decor rootpage__decor_4"></div>
+			<div class="rootpage__decor rootpage__decor_5"></div>
+			<div class="rootpage__decor rootpage__decor_6"></div>
+		</div>
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background-color: #040A0A;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #ebe691
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #aaa768;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+
+	.rootpage__decor {
+		position: absolute;
+
+	}
+
+	.rootpage__decor_1 {
+		top: 20%;
+		right: 0;
+		z-index: 1;
+	}
+
+	.rootpage__decor_2 {
+		top: 35%;
+		left: 0;
+		z-index: 1;
+	}
+
+	.rootpage__decor_3 {
+		width: 250px;
+		height: 350px;
+		top: 20%;
+		left: 20%;
+		background-color: #32b5a4;
+		filter: blur(125px);
+		transform: rotate(-71.86deg);
+	}
+
+	.rootpage__decor_4 {
+		width: 250px;
+		height: 350px;
+		bottom: -30%;
+		right: 20%;
+		background-color: #c22d63;
+		filter: blur(125px);
+		transform: rotate(31.86deg);
+	}
+
+	.rootpage__decor_5 {
+		width: 250px;
+		height: 350px;
+		bottom: -95%;
+		right: 35%;
+		background-color: #163D8F;
+		filter: blur(125px);
+		transform: rotate(31.86deg);
+	}
+
+	.rootpage__decor_6 {
+		width: 250px;
+		height: 350px;
+		bottom: -95%;
+		right: 55%;
+		background-color: #C8A156;
+		filter: blur(125px);
+		transform: rotate(31.86deg);
+	}
+
+	.uppercase {
+		text-transform: uppercase;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #ebe691;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #ebe691;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+		position: relative;
+		z-index: 2;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #32b5a4;
+
+	}
+
+	.rootpage__contacts a {
+		color: #ebe691;
+	}
+
+	.rootpage__tnx {
+		background: #c22d63;
+		margin: 0px 0px 1rem 0px;
+	}
+</style>
+
+</html>
